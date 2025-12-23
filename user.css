@@ -1,0 +1,231 @@
+/* ==========================================================================
+   SPOTIFY TRANSPARENT THEME - WERSJA DZIAŁAJĄCA 100%
+   ========================================================================== */
+
+/* ==========================================================================
+   1. TAPETA - MUSI BYĆ NA SAMYM SPODZIE
+   ========================================================================== */
+body {
+    background-color: #000 !important;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    background-image: url("https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=1548&auto=format&fit=crop");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(30px);
+    z-index: -1 !important;
+    pointer-events: none;
+}
+
+/* ==========================================================================
+   2. TOTALNIE PRZEZROCZYSTE TŁO - WSZĘDZIE
+   ========================================================================== */
+
+/* Główne kontenery */
+html,
+body,
+#main,
+.Root,
+.Root__top-container,
+.Root__main-view,
+.Root__nav-bar,
+.Root__now-playing-bar {
+    background: none !important;
+    background-color: transparent !important;
+}
+
+/* Główny widok i scrollowanie */
+.main-view-container,
+.main-view-container__scroll-node,
+.main-view-container__scroll-node-child,
+.os-host,
+.os-host-overflow,
+.os-host-overflow-x,
+.os-host-overflow-y,
+.os-padding,
+.os-viewport,
+.os-viewport-native-scrollbars-invisible,
+.os-content {
+    background: none !important;
+    background-color: transparent !important;
+}
+
+/* Sidebar (Your Library) */
+.main-yourLibraryX-library,
+.main-yourLibraryX-libraryRootlist,
+.main-navBar-navBar,
+.main-yourLibraryX-navLink {
+    background: none !important;
+    background-color: transparent !important;
+}
+
+/* Sidebar items - playlists, folders */
+.main-yourLibraryX-listItem,
+.main-yourLibraryX-listItemButton,
+.main-rootlist-rootlistPlaylistButton,
+.main-rootlist-rootlistFolderButton,
+[data-testid="rootlist-item"],
+.main-yourLibraryX-contentItem {
+    background: none !important;
+    background-color: transparent !important;
+}
+
+/* Sidebar hover and selected states */
+.main-yourLibraryX-listItem:hover,
+.main-yourLibraryX-listItemButton:hover,
+.main-rootlist-rootlistPlaylistButton:hover,
+.main-rootlist-rootlistFolderButton:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.main-yourLibraryX-listItem[aria-selected="true"],
+.main-rootlist-rootlistPlaylistButton[aria-selected="true"] {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Top bar */
+.main-topBar-container,
+.main-topBar-background,
+.main-topBar-overlay {
+    background: none !important;
+    background-color: transparent !important;
+    backdrop-filter: blur(50px);
+}
+
+/* Header i entity header */
+.main-entityHeader-container,
+.main-entityHeader-background,
+.main-entityHeader-backgroundColor,
+.main-entityHeader-overlay,
+.main-actionBarBackground-background {
+    background: none !important;
+    background-color: transparent !important;
+}
+
+/* Home view */
+.main-home-homeHeader,
+.main-shelf-shelf {
+    background: none !important;
+    background-color: transparent !important;
+}
+
+/* Player bar na dole */
+.main-nowPlayingBar-container,
+.main-nowPlayingBar-nowPlayingBar,
+footer {
+    background: none !important;
+    background-color: transparent !important;
+    border-top: none !important;
+}
+
+/* Prawy sidebar (jeśli jest) */
+.Root__right-sidebar,
+.main-buddy-feed {
+    background: none !important;
+    background-color: transparent !important;
+}
+
+/* ==========================================================================
+   3. NAPRAWA OBRAZKÓW
+   ========================================================================== */
+.main-card-imageContainer,
+.main-cardImage-imageWrapper,
+[data-testid="card-image-container"] {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+.main-card-imageContainer img,
+.main-image-image,
+[data-testid="card-image-container"] img {
+    opacity: 1 !important;
+    visibility: visible !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5) !important;
+    border-radius: 8px !important;
+}
+
+/* ==========================================================================
+   4. TEKST BIAŁY
+   ========================================================================== 
+* {
+    color: #ffffff !important;
+}
+*/
+/* ==========================================================================
+   5. UKRYCIE PASKA PRZEWIJANIA
+   ========================================================================== */
+.os-scrollbar {
+    display: none !important;
+}
+
+/* ==========================================================================
+   6. HOVER NA KARTACH
+   ========================================================================== */
+.main-card-card:hover,
+.main-trackList-trackListRow:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* rzeczy dodane od uzytkownika ktore ai nie moze kurwa zmieniac bo sa po prostu dobrze napisane */
+.main-yourLibraryX-libraryContainer {
+    background-color: #00000000;
+}
+.Root__globalNav {
+    background-color: #00000000;
+}
+.ChipInnerComponent-sm-selected-isUsingKeyboard {
+    background-color: #00000060;
+}
+
+.NowPlayingView {
+    background-color: #00000000;
+}
+
+.UrfDp0_mKGL9hkfh9g_R:before {
+    background-color: #00000000;
+}
+.main-connectBar-connectBar.main-connectBar-connected { /* granie na innym urzadzeniu */ 
+    background-color: #00000060;
+    color: var(--text-base);
+}
+.main-entityHeader-backgroundColor { display: none !important; } .main-actionBarBackground-background { display: none !important; } .main-home-homeHeader { display: none !important; } .playlist-playlist-actionBarBackground-background { display: none !important; }
+.mzBZbIt7NDzzTffimVhn.TjX06ItOHm0J21btzLaj {
+    background: #00000000;
+}
+
+.ARSbx0SA65V5vol27FS4.main-trackList-trackListHeader {
+    box-shadow: 0 -1px 0 0 #00000000;
+    background: #00000000;
+    backdrop-filter: blur(50px);
+    border-bottom: 0px solid #00000000;
+}
+.view-homeShortcutsGrid-shortcut
+ {
+    background-color: #00000000;
+}
+.main-globalNav-searchInputContainer .main-topBar-searchBar {
+    background: #00000060;
+}
+.ChipInnerComponent-sm-isUsingKeyboard {
+    background-color: #00000060;
+}
+
+.main-nowPlayingView-section {
+    background-base: #00000000;
+    background: #00000000;
+    section-background-base: #00000000;
+}
+#Desktop_PanelContainer_Id {
+    background-color: #00000000 !important;
+    background: transparent !important;
+    --background-base: transparent !important;
+}
