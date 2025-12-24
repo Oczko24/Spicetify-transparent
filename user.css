@@ -4,11 +4,24 @@
 
 /* ==========================================================================
    1. TAPETA - MUSI BYĆ NA SAMYM SPODZIE
-   ========================================================================== */
+   ========================================================================== 
+   
+   #FFA000 musi byc akcentem w przyszlosci
+*/
+   
+
 body {
     background-color: #000 !important;
 }
-
+.main {
+--section-background-base: #00000000;
+}
+:root {
+   --spice-main: #00000000;
+   --spice-rgb-shadow: 0, 0, 0, 0;
+   --encore-overlay-box-shadow: 0 0px 0px 0 #00000000;
+   --spice-sidebar: pizda; /* tu musi to byc */
+}
 
 body::before {
     content: "";
@@ -183,7 +196,7 @@ footer {
     background-color: #00000000;
 }
 .ChipInnerComponent-sm-selected-isUsingKeyboard {
-    background-color: #00000060;
+    background-color: #00000000; /* moze byc tez 60 ale nie musi */
 }
 
 .NowPlayingView {
@@ -223,9 +236,48 @@ footer {
     background-base: #00000000;
     background: #00000000;
     section-background-base: #00000000;
+    background-color: #00000000 !important;
 }
 #Desktop_PanelContainer_Id {
     background-color: #00000000 !important;
     background: transparent !important;
     --background-base: transparent !important;
 }
+
+.playlist-playlist-playlistContent {
+    background: #00000000;
+    }
+.main-nowPlayingView-contextItemInfo:before {
+    background-image: none !important;
+    background: none !important;
+}
+
+.main-home-filterChipsSection {
+    background-color: #00000000;
+}
+.view-homeShortcutsGrid-shortcut .view-homeShortcutsGrid-imageWrapper {
+    background-color: #00000000;
+}
+
+.main-home-content {
+    --carousel-start-chevron-gradient: hsla(0, 0%, 0%, 0) !important;
+    --carousel-end-chevron-gradient: hsla(0, 0%, 0%, 0) !important;
+}
+
+
+.encore-dark-theme .encore-inverted-light-set {
+    --background-base: #FFA000;
+}
+
+.main-card-imageContainer img, .main-image-image, [data-testid="card-image-container"] img {
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0) !important;
+    }
+
+.x-entityImage-imageContainer {
+    background-color: #00000000;
+  }
+  
+  .Root__globalNav .main-globalNav-navLink {
+    background-color: #00000000;
+}
+
