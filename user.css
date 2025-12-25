@@ -279,7 +279,7 @@ footer {
 
 
 .encore-dark-theme .encore-inverted-light-set {
-    --background-base: #FFA000;
+    --background-base: #191b17;
 }
 .encore-dark-theme, .encore-dark-theme .encore-base-set {
     --background-base: #00000000;
@@ -439,4 +439,3 @@ Specificity: (0,1,0)
 .playlist-playlist-actionBarBackground-background {
 background-color: #FFA00050;
 }
-
