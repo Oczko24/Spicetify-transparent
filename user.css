@@ -205,25 +205,25 @@ footer {
 .NowPlayingView {
     background-color: #00000000;
 }
-
+/*
 .UrfDp0_mKGL9hkfh9g_R:before {
     background-color: #00000000;
-}
+}*/
 .main-connectBar-connectBar.main-connectBar-connected { /* granie na innym urzadzeniu */ 
     background-color: #00000060;
     color: var(--text-base);
 }
-.main-entityHeader-backgroundColor { display: none !important; } .main-actionBarBackground-background { display: none !important; } .main-home-homeHeader { display: none !important; } .playlist-playlist-actionBarBackground-background { display: none !important; }
+.main-entityHeader-backgroundColor { display: none !important; } .main-actionBarBackground-background { display: none !important; } .main-home-homeHeader { display: none !important; } .playlist-playlist-actionBarBackground-background { display: none !important; }/*
 .mzBZbIt7NDzzTffimVhn.TjX06ItOHm0J21btzLaj {
     background: #00000000;
-}
-
+}*/
+/*
 .ARSbx0SA65V5vol27FS4.main-trackList-trackListHeader {
     box-shadow: 0 -1px 0 0 #00000000;
     background: #00000000;
     backdrop-filter: blur(1px);
     border-bottom: 0px solid #00000000;
-}
+}*/
 .view-homeShortcutsGrid-shortcut
  {
     background-color: #00000000;
@@ -357,7 +357,9 @@ footer {
 }
 .main-contextMenu-menu {
     background-color: #00000060;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(60px);
+    border-radius: 10px;
+    overflow-y: none !important;
     }
 .search-searchCategory-carouselButton {
     background-color: #272c22;
@@ -370,10 +372,10 @@ footer {
 .encore-dark-theme, .encore-dark-theme .encore-base-set {
     background-color: #00000060;
     }
-    /* wyszukiwarka */
+    /* wyszukiwarka *//*
 .TypeList__TypeListElement-sc-1jhixr6-0, .TypeListElement-grid-typeList-condensedAll {
     backdrop-filter: blur(30px);
-}
+}*/
 .cover-art {
     background-color: #292718;
     }
@@ -386,4 +388,24 @@ backdrop-filter: blur(30px);
     }
 .x-explicit-label {
     color: #ffffff80;
+}
+/* ==========================================================================
+   FIX MENU KONTEKSTOWEGO - WERSJA POPRAWIONA (Działają podmenu)
+   ========================================================================== */
+
+/* 1. Resetujemy overflow, żeby podmenu (Add to playlist) mogły wystawać poza ramkę */
+.main-contextMenu-menu {
+    overflow: unset !important; /* Przywraca domyślne zachowanie Spotify */
+}
+
+/* 2. Ukrywamy wizualnie pasek przewijania (jeśli się pojawi), ale nie blokujemy funkcji */
+.main-contextMenu-menu::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    background: transparent !important;
+}
+
+/* Opcjonalnie: Zabezpieczenie dla listy wewnątrz menu (gdyby to ona scrollowała) */
+.main-contextMenu-menuItem {
+    overflow: visible !important;
 }
